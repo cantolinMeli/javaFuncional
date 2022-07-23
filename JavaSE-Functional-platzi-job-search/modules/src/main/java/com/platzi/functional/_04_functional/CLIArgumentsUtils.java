@@ -15,6 +15,7 @@ public class CLIArgumentsUtils {
     }
 
     static CLIArguments generateCLI() {
+        //Supplier: Es una expresion lambda que no tiene parámetros pero devuelve un resultado.
         Supplier<CLIArguments> generator = () -> new CLIArguments();
         return generator.get();
     }
